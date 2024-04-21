@@ -1,0 +1,28 @@
+// Gromozeka loves cookies with numbers written on them. Gromozeka will eat a cookie if a number that is comfortable for him is written on it. Gromozeka considers a number comfortable if it is an exact power of two. Gromozeka now has a cookie in her hands with the number N written on it. Print the word YES if Gromozeka eats this cookie and the word NO otherwise.
+
+// The operation of exponentiation cannot be used!
+ 
+
+// Input data
+// Enter the natural number N (N < 109).
+ 
+
+// Output
+// Print the answer to the problem.
+  
+#include <iostream>
+using namespace std;
+int main() {
+    int N;
+    cin >> N;
+    int i = 1;
+    
+    if(N==1)    cout << "YES";
+    
+    while(i < N)    i*=2;
+    
+    if(i == N)    cout << "YES";
+    else          cout << "NO";
+
+    return 0;
+}
